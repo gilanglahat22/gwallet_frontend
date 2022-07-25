@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: #6379f4;
+  color: #2bafa4;
   background-color: #d9dfff;
 }
 .alert-delete {
@@ -108,15 +108,15 @@
   transition: 0.3s;
 }
 .native {
-  background-color: #6379f4;
+  background-color: #2bafa4;
   color: #fff;
 }
 .native:hover {
-  background: #586ff1;
+  background: #0a7676;
   transition: 0.3s;
 }
 .native:active {
-  background: #4c61db;
+  background: #25aea3;
   transition: 0.3s;
 }
 @keyframes pull-down {

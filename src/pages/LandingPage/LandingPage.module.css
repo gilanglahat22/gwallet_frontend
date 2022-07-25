@@ -178,9 +178,9 @@
   background-color: #473ad10f;
   padding: 3.5em 7.5em;
 }
-/* .partnersWrapper {
-  background-color: darkcyan;
-} */
+.partnersWrapper {
+  height: 80px;
+}
 
 @media screen and (max-width: 628px) {
   .partnerSection {
@@ -197,8 +197,8 @@
     flex-wrap: wrap;
   }
   .partnerImage {
-    height: 112px;
-    width: 112px;
+    height: 100px;
+    width: 100px;
   }
 }
 

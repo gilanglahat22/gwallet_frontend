@@ -74,7 +74,7 @@
   font-weight: bold;
 }
 .pin-confirm-input:focus-within {
-  border: 1px solid #6379f4;
+  border: 1px solid #2bafa4;
 }
 
 .footer-modal {
@@ -86,7 +86,7 @@
   width: 35%;
   border: none;
   outline: none;
-  background: #6379f4;
+  background: #2bafa4;
   box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
   border-radius: 12px;
   color: #ffffff;
@@ -95,11 +95,11 @@
   cursor: pointer;
 }
 .btn-pin-confirm:hover {
-  background: #586ff1;
+  background: #0a7676;
   transition: 0.3s;
 }
 .btn-pin-confirm:active {
-  background: #4c61db;
+  background: #25aea3;
   transition: 0.3s;
 }
 
