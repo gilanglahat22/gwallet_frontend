@@ -1,0 +1,36 @@
+.topup-form {
+  margin-top: 6em;
+}
+.button-topup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 20em;
+}
+.btn-topup {
+  margin-top: 2rem;
+}
+.balance-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 628px) {
+  .formTopupInput {
+    width: 100%;
+    height: 100%;
+  }
+
+  .input-amount-money {
+    width: 100%;
+    margin: 2em 0;
+  }
+  .button-topup {
+    width: 100%;
+    margin: 6em 0 2em 0;
+  }
+}

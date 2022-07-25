@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px) {
+  .header-content {
+    background-color: #ffffff !important;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 1.75em;
+    line-height: 30px;
+    margin-left: 4em;
+  }
+  .user-profile {
+    margin-right: 6.5em;
+  }
+  .user-profile-name .name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 31px;
+    color: #3a3d42;
+  }
+  .user-profile-name .phone {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(58, 61, 66, 0.9);
+  }
+  .user-pic {
+    border-radius: 5px;
+    height: 53px;
+    object-fit: cover;
+  }
+  .user-profile-name:hover,
+  .user-pic:hover {
+    cursor: pointer;
+  }
+  .notif:hover {
+    cursor: pointer;
+    color: #2bafa4;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .header-content {
+    margin-bottom: 0;
+  }
+  /* .navbarSm {
+    background-color: darkgoldenrod;
+  } */
+  .user-pic {
+    border-radius: 5px;
+    height: 53px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .greetingWrapper {
+    margin-left: -6.5em;
+    cursor: pointer;
+  }
+  .greetingText,
+  .notifIcon {
+    color: #4d4b57;
+  }
+  .userFullName {
+    color: #4d4b57;
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+  .notifIcon:hover {
+    color: #2bafa4;
+    cursor: pointer;
+  }
+
+  .navbarSmv2 {
+    width: 100%;
+    padding: 1em;
+
+    background-color: #fafcff;
+    /* background-color: darkgoldenrod; */
+  }
+  .goBackIcon {
+    font-size: 1.5em;
+    color: #4d4b57;
+    cursor: pointer;
+  }
+  .titlePageSm {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #4d4b57;
+    margin: 0 1.2em;
+  }
+  .moreOptionsMenu {
+    font-size: 1.47em;
+    color: #4d4b57;
+    cursor: pointer;
+    margin-right: -2em;
+  }
+}

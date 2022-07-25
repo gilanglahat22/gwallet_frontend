@@ -1,0 +1,159 @@
+.modal-bg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container {
+  height: 350px;
+  width: 420px;
+  position: relative;
+  background: #ffffff;
+  z-index: 10;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.title-modal-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-modal {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 25px;
+  color: #3a3d42;
+}
+.title-close-btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  background: transparent;
+}
+.close-icon {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 28px;
+  color: rgba(58, 61, 66, 0.6);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pin-confirm-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pin-confirm-input {
+  outline: none;
+  background: #ffffff;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  border-radius: 10px;
+  padding: 0.4rem 0.2rem;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.pin-confirm-input:focus-within {
+  border: 1px solid #6379f4;
+}
+
+.footer-modal {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+}
+.btn-pin-confirm {
+  width: 35%;
+  border: none;
+  outline: none;
+  background: #6379f4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+.btn-pin-confirm:hover {
+  background: #586ff1;
+  transition: 0.3s;
+}
+.btn-pin-confirm:active {
+  background: #4c61db;
+  transition: 0.3s;
+}
+
+@keyframes pull-down {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+.animation-pull-down {
+  animation-name: pull-down;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+@media screen and (max-width: 628px) {
+  .modal-container {
+    height: 270px;
+    width: 300px;
+
+    padding: 1em;
+  }
+
+  .title-modal {
+    font-size: 0.875rem;
+  }
+  .close-icon {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    margin: 0.5rem 0;
+  }
+  .pin-confirm-input {
+    padding: 0.4rem 0.2rem;
+    width: 35px;
+    height: 44px;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  .footer-modal {
+    margin-top: 1.6em;
+  }
+  .btn-pin-confirm {
+    width: 50%;
+    border-radius: 12px;
+    font-size: 1em;
+    padding: 0.5rem 0.7rem;
+  }
+}

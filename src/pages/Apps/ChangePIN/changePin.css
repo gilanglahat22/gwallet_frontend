@@ -1,0 +1,69 @@
+.change-pin-container {
+  width: 500px;
+  margin: auto;
+  margin-top: 3rem;
+}
+.change-pin-wrapper {
+  background: #ffffff;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  border-radius: 10px;
+  padding: 0.5rem 0.2rem;
+  width: 53px;
+  height: 65px;
+  text-align: center;
+  padding: 0.7rem 0.2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* .change-pin-input {
+  text-align: center;
+  background-color: #8796ee;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.4);
+} */
+/* .change-pin-input:focus-within {
+  border-bottom: 1px solid #6379f4;
+} */
+.change-pin-wrapper:focus-within {
+  border: 1px solid #6379f4;
+}
+.btn-change-pin {
+  width: 100%;
+}
+.btn-pin {
+  width: 52%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 628px) {
+  .changePinDescSm {
+    font-weight: normal;
+    font-size: 0.9em;
+    line-height: 28px;
+    color: #7a7886;
+    margin: 0;
+    margin-bottom: 1.5em;
+  }
+  form .formPinSm {
+    width: 100%;
+  }
+  .change-pin-container {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .change-pin-wrapper {
+    padding: 0.3rem 0.2rem;
+    width: 46px;
+    height: 54px;
+    font-size: 1em;
+  }
+  .btn-change-pin {
+    width: 100%;
+    margin-top: 9em;
+  }
+  .btn-pin {
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
