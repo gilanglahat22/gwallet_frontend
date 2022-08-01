@@ -206,7 +206,7 @@ const Profile = () => {
         <ModalAlert
           alertIcon={<AiIcons.AiOutlineLogout />}
           alertTitle="Log Out Account?"
-          alertDesc="Are you sure you want to log out from Zwallet? Save all your changes before logout."
+          alertDesc="Are you sure you want to log out from Gwallet? Save all your changes before logout."
           action="Log Out"
           closeModal={handleModalAlert}
           handleAction={logOut}

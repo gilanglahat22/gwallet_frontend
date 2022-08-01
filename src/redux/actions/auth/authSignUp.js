@@ -22,7 +22,7 @@ export const AuthSignUp = ({ form, handleModalSuccess, setErrorMessage }) => {
   return (dispatch) => {
     dispatch(AuthSignUpRequest());
     return axios
-      .post(`${process.env.REACT_APP_ZWALLET_API}/users/register`, {
+      .post(`${process.env.REACT_APP_GWALLET_API}/users/register`, {
         firstName: form.firstName,
         lastName: form.lastName,
         email: form.email,

@@ -24,7 +24,7 @@ export const NewPassword = ({ form, handleModalSuccess, setErrorMessage }) => {
     dispatch(NewPasswordRequest());
     return axios
       .put(
-        `${process.env.REACT_APP_ZWALLET_API}/users/profile/change-password`,
+        `${process.env.REACT_APP_GWALLET_API}/users/profile/change-password`,
         {
           currentPassword: form.currentPassword,
           newPassword: form.newPassword,

@@ -23,7 +23,7 @@ const ResetPassCreate = () => {
             Your <br></br> Password In a Minutes.
           </h2>
           <p className="section-right-desc d-none d-md-block registration-desc">
-            Now you can create a new password for your Zwallet account. Type
+            Now you can create a new password for your Gwallet account. Type
             your password twice so we can confirm your new passsword.
           </p>
         </div>
@@ -34,7 +34,7 @@ const ResetPassCreate = () => {
             onClick={() => navigate("/")}
             className="logo text-blue text-center"
           >
-            Zwallet
+            Gwallet
           </h1>
         </div>
 
@@ -42,7 +42,7 @@ const ResetPassCreate = () => {
           <h2 className="login-title d-md-none">Reset Password</h2>
           <p className="login-desc d-md-none">
             Create and confirm your new password so you can login to your
-            Zwallet account.
+            Gwallet account.
           </p>
           {/* <!-- input form start here--> */}
 

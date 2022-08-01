@@ -24,7 +24,7 @@ export const TopupMethod = ({ topUpMethod, navigate }) => {
     dispatch(TopupMethodRequest());
     return axios
       .post(
-        `${process.env.REACT_APP_ZWALLET_API}/wallet/topup/method`,
+        `${process.env.REACT_APP_GWALLET_API}/wallet/topup/method`,
         { topup_method: topUpMethod },
         { headers: { Authorization: `Bearer ${token}` } }
       )

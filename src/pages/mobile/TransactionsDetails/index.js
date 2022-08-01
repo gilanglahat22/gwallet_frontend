@@ -24,7 +24,7 @@ export const TransactionsDetails = () => {
     dispatch(GetProfile());
 
     axios
-      .get(`${process.env.REACT_APP_ZWALLET_API}/transaction/history`, {
+      .get(`${process.env.REACT_APP_GWALLET_API}/transaction/history`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then((res) => {

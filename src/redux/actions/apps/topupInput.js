@@ -29,7 +29,7 @@ export const TopupInput = ({
     dispatch(TopupInputRequest());
     return axios
       .put(
-        `${process.env.REACT_APP_ZWALLET_API}/wallet/topup/${topUpId}`,
+        `${process.env.REACT_APP_GWALLET_API}/wallet/topup/${topUpId}`,
         { amount_topup: topupForm.amount_topup },
         { headers: { Authorization: `Bearer ${token}` } }
       )

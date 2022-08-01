@@ -46,7 +46,7 @@ const CreatePIN = () => {
           </h2>
           <p className="section-right-desc d-none d-md-block registration-desc">
             Create 6 digits pin to secure all your money and your data in
-            Zwallet app. Keep it secret and don’t tell anyone about your Zwallet
+            Gwallet app. Keep it secret and don’t tell anyone about your Gwallet
             account password and the PIN.
           </p>
         </div>
@@ -57,7 +57,7 @@ const CreatePIN = () => {
             onClick={() => navigate("/")}
             className="logo text-blue text-center"
           >
-            Zwallet
+            Gwallet
           </h1>
         </div>
 
@@ -65,7 +65,7 @@ const CreatePIN = () => {
           <h2 className="login-title d-md-none">Create PIN</h2>
           <p className="login-desc d-md-none">
             Create 6 digits pin to secure all your money <br></br> and your data
-            in Zwallet app.
+            in Gwallet app.
           </p>
 
           {/* <!-- input form start here--> */}

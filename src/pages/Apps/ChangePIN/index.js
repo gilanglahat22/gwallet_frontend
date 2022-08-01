@@ -38,7 +38,7 @@ const ChangePIN = () => {
       <div className="small-screen-content d-lg-none animation-pull-out">
         <section className="profileContentSm d-flex flex-column justify-content-center align-items-center d-lg-none">
           <p className="changePinDescSm">
-            Enter your current 6 digits Zwallet PIN below to continue to the
+            Enter your current 6 digits Gwallet PIN below to continue to the
             next steps.
           </p>
 
@@ -84,7 +84,7 @@ const ChangePIN = () => {
             <div className="change-pin-text">
               <p className="change-pin-title">Change PIN</p>
               <p className="change-pin-desc">
-                Enter your current 6 digits Zwallet PIN below to <br /> continue
+                Enter your current 6 digits Gwallet PIN below to <br /> continue
                 to the next steps.
               </p>
             </div>

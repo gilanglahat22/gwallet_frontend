@@ -24,7 +24,7 @@ export const NewPin = ({ PIN, handleModalSuccess, setErrorMessage }) => {
     dispatch(NewPinRequest());
     return axios
       .put(
-        `${process.env.REACT_APP_ZWALLET_API}/users/PIN`,
+        `${process.env.REACT_APP_GWALLET_API}/users/PIN`,
         { PIN: PIN },
         { headers: { Authorization: `Bearer ${token}` } }
       )

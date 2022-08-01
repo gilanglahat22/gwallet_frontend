@@ -23,7 +23,7 @@ export const GetDetailsReceiver = ({ id }) => {
   return (dispatch) => {
     dispatch(GetDetailsReceiverRequest());
     return axios
-      .get(`${process.env.REACT_APP_ZWALLET_API}/users/details/${id}`, {
+      .get(`${process.env.REACT_APP_GWALLET_API}/users/details/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then((res) => {

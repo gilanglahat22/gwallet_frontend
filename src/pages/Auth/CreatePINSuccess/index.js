@@ -19,7 +19,7 @@ const CreatePINSuccess = () => {
           </h2>
           <p className="section-right-desc d-none d-md-block registration-desc">
             Your PIN was successfully created and you can now access all the
-            features in Zwallet. Login to your new account and start exploring!
+            features in Gwallet. Login to your new account and start exploring!
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const CreatePINSuccess = () => {
             onClick={() => navigate("/")}
             className="logo text-blue text-center"
           >
-            Zwallet
+            Gwallet
           </h1>
         </div>
 
@@ -38,7 +38,7 @@ const CreatePINSuccess = () => {
           <h2 className="login-title d-md-none">Create PIN Success!</h2>
           <p className="login-desc d-md-none">
             Congrats! Your PIN was successfully created. <br></br> Now you can
-            Login to your account and start exploring Zwallet!
+            Login to your account and start exploring Gwallet!
           </p>
 
           <Button onClick={toCreatePINPage} className="button btn-login">

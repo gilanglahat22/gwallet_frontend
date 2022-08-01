@@ -24,7 +24,7 @@ export const PINConfirmation = ({ PIN, navigate, setErrorMessage }) => {
     dispatch(PINConfirmationRequest());
     return axios
       .post(
-        `${process.env.REACT_APP_ZWALLET_API}/users/PIN`,
+        `${process.env.REACT_APP_GWALLET_API}/users/PIN`,
         { PIN: PIN },
         { headers: { Authorization: `Bearer ${token}` } }
       )

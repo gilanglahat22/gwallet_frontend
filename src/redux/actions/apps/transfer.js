@@ -29,7 +29,7 @@ export const TransferInput = ({
     dispatch(TransferInputRequest());
     return axios
       .post(
-        `${process.env.REACT_APP_ZWALLET_API}/transaction/transfer`,
+        `${process.env.REACT_APP_GWALLET_API}/transaction/transfer`,
         {
           receiverName: `${receiver.first_name} ${receiver.last_name}`,
           receiverPhone: receiver.phone,

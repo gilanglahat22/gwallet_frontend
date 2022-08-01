@@ -22,7 +22,7 @@ export const AuthLogin = ({ form, navigate, setErrorMessage }) => {
   return (dispatch) => {
     dispatch(AuthLoginRequest());
     return axios
-      .post(`${process.env.REACT_APP_ZWALLET_API}/users/login`, {
+      .post(`${process.env.REACT_APP_GWALLET_API}/users/login`, {
         email: form.email,
         password: form.password
       })

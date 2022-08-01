@@ -24,7 +24,7 @@ export const DeletePhoneNumber = ({ handleModalAlert, handleModalSuccess }) => {
     dispatch(DeletePhoneNumberRequest());
     return axios
       .put(
-        `${process.env.REACT_APP_ZWALLET_API}/users/profile/delete-phone-number`,
+        `${process.env.REACT_APP_GWALLET_API}/users/profile/delete-phone-number`,
         { phone: null },
         { headers: { Authorization: `Bearer ${token}` } }
       )

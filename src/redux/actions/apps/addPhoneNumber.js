@@ -28,7 +28,7 @@ export const NewPhoneNumber = ({
     dispatch(NewPhoneRequest());
     return axios
       .put(
-        `${process.env.REACT_APP_ZWALLET_API}/users/profile`,
+        `${process.env.REACT_APP_GWALLET_API}/users/profile`,
         { phone: form.phone },
         { headers: { Authorization: `Bearer ${token}` } }
       )

@@ -11,7 +11,7 @@ const UserProvider = (props) => {
     const token = JSON.parse(localStorage.getItem("token"));
     if (token) {
       axios
-        .get(`${process.env.REACT_APP_ZWALLET_API}/users/profile`, {
+        .get(`${process.env.REACT_APP_GWALLET_API}/users/profile`, {
           headers: { Authorization: `Bearer ${token}` }
         })
         .then((res) => {

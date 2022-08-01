@@ -23,7 +23,7 @@ export const AuthCreatePIN = ({ PIN, navigate, setErrorMessage }) => {
     const userId = JSON.parse(localStorage.getItem("userId"));
     dispatch(AuthCreatePINRequest());
     return axios
-      .put(`${process.env.REACT_APP_ZWALLET_API}/users/PIN/${userId}`, {
+      .put(`${process.env.REACT_APP_GWALLET_API}/users/PIN/${userId}`, {
         PIN: PIN
       })
       .then((res) => {

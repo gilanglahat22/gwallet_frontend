@@ -25,7 +25,7 @@ export const SearchReceiver = (querySearch) => {
     dispatch(SearchReceiverRequest());
     return axios
       .get(
-        `${process.env.REACT_APP_ZWALLET_API}/users/search?name=${querySearch}&sort=created_at&order=asc`,
+        `${process.env.REACT_APP_GWALLET_API}/users/search?name=${querySearch}&sort=created_at&order=asc`,
         { headers: { Authorization: `Bearer ${token}` } }
       )
       .then((res) => {

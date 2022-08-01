@@ -29,7 +29,7 @@ export const TransferConfirmation = ({
     dispatch(TransferConfirmationRequest());
     return axios
       .post(
-        `${process.env.REACT_APP_ZWALLET_API}/transaction/transfer/${transferId}`,
+        `${process.env.REACT_APP_GWALLET_API}/transaction/transfer/${transferId}`,
         { PIN: PIN },
         { headers: { Authorization: `Bearer ${token}` } }
       )

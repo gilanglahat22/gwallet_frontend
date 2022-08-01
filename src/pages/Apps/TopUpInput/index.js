@@ -125,7 +125,7 @@ const TopUpInput = () => {
             </p>
 
             <p className="text-title-name balance-info text-center mt-4">
-              Zwallet Balance: Rp {profile.balance}
+              Gwallet Balance: Rp {profile.balance}
             </p>
 
             <div className="button-topup">
@@ -176,7 +176,7 @@ const TopUpInput = () => {
             </p>
 
             <p className="text-title-name balance-info text-center mt-4">
-              Zwallet Balance: Rp {profile.balance}
+              Gwallet Balance: Rp {profile.balance}
             </p>
 
             <div className="button-topup">

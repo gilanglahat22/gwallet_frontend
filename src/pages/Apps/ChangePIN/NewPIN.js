@@ -50,7 +50,7 @@ const NewPIN = () => {
       <div className="small-screen-content d-lg-none animation-pull-out">
         <section className="profileContentSm d-flex flex-column justify-content-center align-items-center d-lg-none">
           <p className="changePinDescSm">
-            Type your new 6 digits security PIN for transactions in Zwallet.
+            Type your new 6 digits security PIN for transactions in Gwallet.
           </p>
 
           {/* <!-- input form start here--> */}
@@ -100,7 +100,7 @@ const NewPIN = () => {
               </p>
               <p className="change-pin-desc">
                 Type your new 6 digits security PIN for transactions <br /> in
-                Zwallet.
+                Gwallet.
               </p>
             </div>
 

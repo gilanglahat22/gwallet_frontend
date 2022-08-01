@@ -13,7 +13,7 @@ const Transaction = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_ZWALLET_API}/transaction/history?limit=5`, {
+      .get(`${process.env.REACT_APP_GWALLET_API}/transaction/history?limit=5`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then((res) => {

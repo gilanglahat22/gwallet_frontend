@@ -30,7 +30,7 @@ export const TopupConfirmation = ({
     dispatch(TopupConfirmationRequest());
     return axios
       .post(
-        `${process.env.REACT_APP_ZWALLET_API}/wallet/topup/confirmation/${topUpId}`,
+        `${process.env.REACT_APP_GWALLET_API}/wallet/topup/confirmation/${topUpId}`,
         { PIN: PIN },
         { headers: { Authorization: `Bearer ${token}` } }
       )

@@ -24,7 +24,7 @@ export const NewProfilePicture = ({ formData, handleModalSuccess }) => {
     dispatch(NewProfilePictureRequest());
     return axios
       .put(
-        `${process.env.REACT_APP_ZWALLET_API}/users/profile/picture`,
+        `${process.env.REACT_APP_GWALLET_API}/users/profile/picture`,
         formData,
         { headers: { Authorization: `Bearer ${token}` } }
       )
