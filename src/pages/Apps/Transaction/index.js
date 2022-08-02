@@ -1,6 +1,7 @@
 /* eslint-disable array-callback-return */
 import axios from "axios";
 import React, { Fragment, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import * as RiIcons from "react-icons/ri";
 import * as BsIcons from "react-icons/bs";
 import Button from "../../../components/base/Button";
@@ -123,7 +124,8 @@ const Transaction = () => {
               );
               if (profile.status === "Success") {
                 return (
-                  <div
+                  <Link
+                    to={"/apps"}
                     key={index}
                     className="history-transaction-profiles d-flex flex-row justify-content-between align-items-center mb-3 ms-3 me-3 pt-2 pb-2"
                   >
@@ -137,7 +139,7 @@ const Transaction = () => {
                       height="54px"
                       alt="Samuel"
                     />
-                    <div className="profile-description history-page">
+                  <div className="profile-description history-page">
                       <p className="profile-desc-name mb-0">
                         {profile.receiver_name}
                       </p>
@@ -146,7 +148,7 @@ const Transaction = () => {
                     <p className="nominal-subscription me-3">
                       -Rp{profile.amount_transfer}
                     </p>
-                  </div>
+                  </Link>
                 );
               }
             })

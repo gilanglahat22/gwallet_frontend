@@ -409,7 +409,7 @@ input::-webkit-inner-spin-button {
 /* ================== TRANSFER CONFIRMATION PAGE ==================== */
 
 .details-transfer {
-  height: 43.5%;
+  height: 61.5%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -490,8 +490,11 @@ input::-webkit-inner-spin-button {
 }
 .btn-back-home {
   font-weight: bold;
-  background-color: #2bafa4;
+  background-color: rgba(169, 169, 169, 0.6);
   box-shadow: 1px 6px 75px #6d64640d;
+  margin: 0.3em 2em;
+  width: 85px;
+  height: 45px;
   border-radius: 12px;
   padding-left: 1.2rem;
   padding-right: 1.2rem;

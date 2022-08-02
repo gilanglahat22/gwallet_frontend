@@ -5,10 +5,15 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../../components/base/Button";
 import img from "../../../assets/img/blank-profile-picture.png";
 import Sidebar from "../../../components/module/Sidebar";
+import { useDispatch, useSelector } from "react-redux";
+import { GetProfile } from "../../../redux/actions/apps/getProfile";
 
 const TransferStatus = () => {
+  const profileData = useSelector((state) => state.GetProfile);
+  const profile = profileData.data;
   const token = JSON.parse(localStorage.getItem("token"));
   const [transaction, setTransaction] = useState({
+    user_id: "",
     receiver_name: "",
     receiver_phone: "",
     receiver_picture: "",
@@ -132,17 +137,48 @@ const TransferStatus = () => {
           </div>
 
           <div className="details-transfer ms-2 me-2">
+          <p className="history-title mt-3 ms-5">From</p>
+          <div className="d-flex receivers p-1 mb-3 mt-3 ms-5 me-4">
+            <img
+              className="receiver-picture user-pic ms-4 mt-2"
+              src={
+                profile.picture
+                  ? profile.picture
+                  : img
+              }
+              alt="Samuel"
+            />
+            <div className="receiver-detail ms-3 mt-2">
+              <p className="text-title-name mb-0">
+              {profile.first_name} {profile.last_name}
+              </p>
+              <p className="weekly mt-1">+62 {profile.phone}</p>
+            </div>
+          </div>
+          <p className="history-title mt-3 ms-5">To</p>
+          {/* <!-- receiver lg, xl, xxl --> */}
+          <div className="d-flex receivers p-1 mb-3 mt-3 ms-5 me-4">
+            <img
+              className="receiver-picture user-pic ms-4 mt-2"
+              src={
+                transaction.receiver_picture
+                  ? transaction.receiver_picture
+                  : img
+              }
+              alt="Samuel"
+            />
+            <div className="receiver-detail ms-3 mt-2">
+              <p className="text-title-name mb-0">
+                {transaction.receiver_name}
+              </p>
+              <p className="weekly mt-1">+62 {transaction.receiver_phone}</p>
+            </div>
+          </div>
             <div className="row mt-2">
               <div className="col-5 col-md-11 ms-3 ms-md-5 me-md-5 confirm-items">
                 <p className="text-title m-2">Amount</p>
                 <p className="text-content m-2">
                   Rp {transaction.amount_transfer}
-                </p>
-              </div>
-              <div className="col-5 col-md-11 offset-1 ms-md-5 me-md-5 confirm-items mt-md-1">
-                <p className="text-title m-2">Balance Left</p>
-                <p className="text-content m-2">
-                  Rp {transaction.balance_left}
                 </p>
               </div>
             </div>
@@ -158,32 +194,11 @@ const TransferStatus = () => {
                 <p className="text-content m-2">{transaction.notes}</p>
               </div>
             </div>
-
-            <p className="history-title mt-3 ms-5">Transfer to</p>
-
-            {/* <!-- receiver lg, xl, xxl --> */}
-            <div className="d-flex receivers p-1 mb-3 mt-3 ms-5 me-4">
-              <img
-                className="receiver-picture user-pic ms-4 mt-2"
-                src={
-                  transaction.receiver_picture
-                    ? transaction.receiver_picture
-                    : img
-                }
-                alt="Samuel"
-              />
-              <div className="receiver-detail ms-3 mt-2">
-                <p className="text-title-name mb-0">
-                  {transaction.receiver_name}
-                </p>
-                <p className="weekly mt-1">{transaction.receiver_phone}</p>
-              </div>
-            </div>
           </div>
 
           {/* <!-- button continue lg, xl, xxl --> */}
           <div className="buttons d-flex flex-row justify-content-end">
-            <div className="mt-5 mb-4 me-2">
+            {/* <div className="mt-5 mb-4 me-2">
               <Button className="btn-share w-100">
                 <BsIcons.BsShare className="share-icon" />
               </Button>
@@ -193,7 +208,7 @@ const TransferStatus = () => {
                 <BsIcons.BsDownload className="share-icon me-2" />
                 Download
               </Button>
-            </div>
+            </div> */}
             <div className="d-flex mt-5 mb-4 me-5 ms-1">
               <Button
                 onClick={backToHome}
