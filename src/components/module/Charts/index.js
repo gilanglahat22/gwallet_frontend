@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import * as BsIcons from "react-icons/bs";
 import * as FiIcons from "react-icons/fi";
 import "./chart.css";
-// import graphic from "../../../assets/img/graphic.png";
 
 const Chart = (props) => {
   return (
@@ -21,10 +20,8 @@ const Chart = (props) => {
           </div>
         </div>
         <div className="graphic d-flex flex-column justify-content-center align-items-center">
-          {/* <img className="mt-5 mb-2" src={graphic} alt="Graphic" /> */}
           <div className="no-chart-record d-flex flex-column justify-content-center align-items-center mt-3 mb-5">
-            <FiIcons.FiBarChart2 className="no-chart-icon mt-2" />
-            <p className="no-chart-text mt-1 mb-4">No Records</p>
+          <FiIcons.FiBarChart2 className="no-chart-icon mt-2" />
           </div>
         </div>
       </section>

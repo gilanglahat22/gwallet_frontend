@@ -9,11 +9,6 @@ import * as RiIcons from "react-icons/ri";
 const History = () => {
   const token = JSON.parse(localStorage.getItem("token"));
   const [history, setHistory] = useState([]);
-  // console.log(history);
-  // history.map((item, index) => {
-  //   let tgl = new Date(item.date).toLocaleDateString();
-  //   console.log(tgl);
-  // });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,7 +32,7 @@ const History = () => {
     <Fragment>
       <section className="col-lg-6 history-content-transaction d-lg-flex flex-column me-3">
         <div className="history-transaction-title ms-2">
-          <p className="">Transaction History</p>
+          <p className="">Transfer History</p>
 
           <p onClick={toTransactionPage} className="history-page-link">
             See All
@@ -83,7 +78,7 @@ const History = () => {
         ) : (
           <div className="no-transactions d-flex flex-column justify-content-center align-items-center">
             <RiIcons.RiFileList3Line className="no-transactions-icon" />
-            <p className="no-transactions-text mt-2">No Transactions</p>
+            <p className="no-transactions-text mt-2">No Transfer</p>
           </div>
         )}
       </section>

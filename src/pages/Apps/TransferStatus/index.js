@@ -185,7 +185,7 @@ const TransferStatus = () => {
             <div className="row mt-5 mt-md-1">
               <div className="col-5 col-md-11 ms-3 ms-md-5 me-md-5 confirm-items">
                 <p className="text-title m-2">Date & Time</p>
-                <p className="text-content m-2">{transaction.date}</p>
+                <p className="text-content m-2">{convertedDate}</p>
               </div>
             </div>
             <div className="row mt-5 mt-md-1 mb-md-5 mb-lg-1">

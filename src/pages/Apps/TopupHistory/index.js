@@ -8,17 +8,13 @@ import Sidebar from "../../../components/module/Sidebar";
 import { useDispatch, useSelector  } from "react-redux";
 import img from "../../../assets/img/blank-profile-picture.png";
 import { GetTopupHistory } from "../../../redux/actions/apps/getTopupHistory";
-import { GetTransferHistory } from "../../../redux/actions/apps/getTransferHistory";
 import topupImg from "../../../assets/img/topup_logo.png";
 
 const Transaction = () => {
   const dispatch1 = useDispatch();
-  const dispatch2 = useDispatch();
   const topupHistory = useSelector((state) => state.GetTopupHistory).data;
-  const history = useSelector((state) => state.GetTransferHistory).data;
   useEffect(() => {
     dispatch1(GetTopupHistory());
-    dispatch2(GetTransferHistory());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
@@ -42,8 +38,8 @@ const Transaction = () => {
             </div>
           </div>
 
-          {history.length > 0 ? (
-            history.map((profile, index) => {
+          {topupHistory.length > 0 ? (
+            topupHistory.map((profile, index) => {
               const date = new Date(profile.date);
               const DATE_OPTIONS = {
                 weekday: "short",
@@ -69,21 +65,19 @@ const Transaction = () => {
                     <img
                       className="user-pic m-1"
                       src={
-                        profile.receiver_picture
-                          ? profile.receiver_picture
-                          : img
+                        topupImg
                       }
                       alt="TransactionPic"
                       height={52}
                     />
                     <div className="profile-description">
                       <p className="profile-desc-name mb-0">
-                        {profile.receiver_name}
+                        {profile.topup_method}
                       </p>
                       <p className="profile-desc mb-0">{convertedDate}</p>
                     </div>
-                    <p className="nominal-subscription amountMoneySm">
-                      -Rp {profile.amount_transfer}
+                    <p className="nominal-topup amountMoneySm">
+                      +Rp {profile.amount_topup}
                     </p>
                   </div>
                 );
@@ -92,7 +86,7 @@ const Transaction = () => {
           ) : (
             <div className="no-transactions d-flex flex-column justify-content-center align-items-center">
               <RiIcons.RiFileList3Line className="no-transactions-icon" />
-              <p className="no-transactions-text mt-2">No Transactions</p>
+              <p className="no-transactions-text mt-2">No Topup</p>
             </div>
           )}
         </section>
@@ -103,11 +97,11 @@ const Transaction = () => {
         <Sidebar />
 
         <section className="content-bar big-screen col-lg-8 animation-pull-out">
-          <p className="history-title mt-3 ms-4">Transfer History</p>
+          <p className="history-title mt-3 ms-4">Topup History</p>
           <div className="details-history ms-2 me-2">
-          {history.length > 0 ? (
+          {topupHistory.length > 0 ? (
             // eslint-disable-next-line array-callback-return
-            history.map((profile, index) => {
+            topupHistory.map((profile, index) => {
               const date = new Date(profile.date);
               const DATE_OPTIONS = {
                 weekday: "short",
@@ -132,21 +126,19 @@ const Transaction = () => {
                     <img
                       className="receiver-picture user-pic mt-1 ms-3"
                       src={
-                        profile.receiver_picture
-                          ? profile.receiver_picture
-                          : img
+                        topupImg
                       }
                       height="54px"
                       alt="Samuel"
                     />
                     <div className="profile-description history-page">
                       <p className="profile-desc-name mb-0">
-                        {profile.receiver_name}
+                        {profile.topup_method}
                       </p>
                       <p className="profile-desc mb-0">{convertedDate}</p>
                     </div>
-                    <p className="nominal-subscription me-3">
-                      -Rp{profile.amount_transfer}
+                    <p className="nominal-topup me-3">
+                      +Rp{profile.amount_topup}
                     </p>
                   </div>
                 );
@@ -155,7 +147,7 @@ const Transaction = () => {
           ) : (
             <div className="no-transactions d-flex flex-column justify-content-center align-items-center mt-5">
               <RiIcons.RiFileList3Line className="no-transactions-icon" />
-              <p className="no-transactions-text mt-2">No Transactions</p>
+              <p className="no-transactions-text mt-2">No Topup</p>
             </div>
           )}
           </div>

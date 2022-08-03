@@ -11,6 +11,7 @@ import CreatePIN from "../pages/Auth/CreatePIN";
 import Apps from "../pages/Apps";
 import Dashboard from "../pages/Apps/Dashboard";
 import Transaction from "../pages/Apps/Transaction";
+import TopupHistory from "../pages/Apps/TopupHistory";
 import Receiver from "../pages/Apps/Receiver";
 import TopUp from "../pages/Apps/TopUp";
 import Profile from "../pages/Apps/Profile";
@@ -55,6 +56,7 @@ const Router = () => {
 
         <Route path={"/apps"} element={<Apps />}>
           <Route index element={<Dashboard />} />
+          <Route path={"topuphistory"} element={<TopupHistory />} />
           <Route path={"history"} element={<Transaction />} />
           <Route path={"topup"} element={<TopUp />} />
           <Route path={"topup/input"} element={<TopUpInput />} />

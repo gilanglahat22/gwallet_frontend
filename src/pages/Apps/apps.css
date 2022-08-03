@@ -96,6 +96,12 @@ button.topup-default {
   line-height: 22px;
   color: #ff5b37;
 }
+.nominal-topup {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2bafa4;
+}
 
 .nav-title {
   font-weight: bold;
@@ -407,6 +413,19 @@ input::-webkit-inner-spin-button {
 }
 
 /* ================== TRANSFER CONFIRMATION PAGE ==================== */
+
+.details-history {
+  height: 85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.details-history::-webkit-scrollbar {
+  width: 5px;
+  background: #ebe8e8;
+}
+.details-history::-webkit-scrollbar-thumb {
+  background: rgba(196, 193, 193, 0.3);
+}
 
 .details-transfer {
   height: 61.5%;

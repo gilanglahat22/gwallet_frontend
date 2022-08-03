@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Navigate, Outlet } from "react-router-dom";
-import Footer from "../../components/module/Footer";
 import Header from "../../components/module/Header";
 import "./apps.css";
 
@@ -18,8 +17,6 @@ const Apps = () => {
           <main className="col-12 main-content">
             <Outlet />
           </main>
-
-          <Footer />
         </div>
       </main>
     </Fragment>

@@ -59,16 +59,16 @@
   border-radius: 8px;
   box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
   cursor: pointer;
-  background: #6379f4;
+  background: #43c5bb;
   color: #fff;
   font-size: 1rem;
 }
 .btn-modal-success:hover {
-  background: #586ff1;
+  background: #2bafa4;
   transition: 0.3s;
 }
 .btn-modal-success:active {
-  background: #4c61db;
+  background: #2bafa4;
   transition: 0.3s;
 }
 

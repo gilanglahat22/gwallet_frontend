@@ -35,9 +35,9 @@ const TransferConfirm = () => {
     month: "short",
     day: "numeric",
     hour: "numeric",
-    minute: "numeric"
-    // timeZone: "WIT",
-    // timeZoneName: "short"
+    minute: "numeric",
+    second: "numeric",
+    timeZoneName: "short"
   };
   const convertedDate = date.toLocaleDateString("en-GB", DATE_OPTIONS);
 

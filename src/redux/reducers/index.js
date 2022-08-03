@@ -20,6 +20,8 @@ import TransferConfirmation from "./apps/transferConfirmation";
 import TopupMethod from "./apps/topupMethod";
 import TopupInput from "./apps/topupInput";
 import TopupConfirmation from "./apps/topupConfirmation";
+import GetTopupHistory from "./apps/getTopupHistory";
+import GetTransferHistory from "./apps/getTransferHistory";
 
 // combine all reducers into rootReducers
 const rootReducers = combineReducers({
@@ -34,6 +36,8 @@ const rootReducers = combineReducers({
   PINConfirm,
   NewPin,
   NewPhoneNumber,
+  GetTopupHistory,
+  GetTransferHistory,
   DeletePhoneNumber,
   NewProfilePicture,
   GetDetailsReceiver,
