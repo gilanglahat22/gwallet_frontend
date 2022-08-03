@@ -57,6 +57,10 @@ Frontend pada project ini dibuat dengan teknologi berikut :
    ```sh
    npm install
    ```
+4. Create env file and add 
+    ```sh  
+    REACT_APP_GWALLET_API = https://gwallet-labpro-2022.herokuapp.com/ or http://localhost:Your API PORT/
+    ```
 4. Start the Application
    ```sh
    npm start
@@ -66,3 +70,9 @@ Frontend pada project ini dibuat dengan teknologi berikut :
 
 [Gwallet](https://gwallet-labpro.app)
 
+
+## Author
+
+- Muhammad Gilang Ramadhan (13520137)
+## Contact
+- 13520137@std.stei.itb.ac.id
