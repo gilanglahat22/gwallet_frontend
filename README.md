@@ -68,7 +68,7 @@ Frontend pada project ini dibuat dengan teknologi berikut :
 
 ## Demo
 
-[Gwallet](https://gwallet-labpro.app)
+[Gwallet](https://gwallet-labpro.netlify.app/)
 
 
 ## Author
