@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Tugas Asisten Lab Programming
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Problem description
 
-## Available Scripts
+BNMO (dibaca: Binomo) adalah sebuah robot video game console yang dimiliki oleh Indra dan Doni. Saat ini, BNMO memiliki beragam fitur seperti inventarisasi dan toko game. Karena sudah bosan dengan dunia video game yang tidak memberikan untung, Indra dan Doni ingin memasuki dan mengenal dunia fintech. Mereka ingin menambah fitur integrasi bank pada BNMO yang memiliki fitur-fitur seperti transfer dan deposit uang. Tetapi, Indra dan Doni tidak cukup ahli dalam ngoding.
 
-In the project directory, you can run:
+## About The Project
 
-### `npm start`
+**Gwallet** adalah project yang dibuat untuk menjadi solusi dari permasalahan di atas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Topup saldo
+- Melakukan transfer saldo ke rekening lain
+- Menampilkan riwayat transfer dan topup
+- Login, sign up, dan log out user
+- menampilkan dan mengedit profile user
+- Search user lain pada saat transfer
+- Melihat informasi profil dan saldo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Design Pattern yang dipakai
+- Object pool
+- Facade
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend pada project ini dibuat dengan teknologi berikut :
 
-### `npm run build`
+- [ReactJS](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
+- [Redux](https://redux.js.org/)
+- [Axios](https://axios-http.com/)
+- [Netlify](https://www.netlify.com/)
+- [Backend APIs](https://github.com/gilanglahat22/gwallet_frontend)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+- Clone Repo dari Api Gwallet and langkah installasinya sesuai dengan link berikut :
+  [Gwallet Backend APIs](https://github.com/gilanglahat22/gwallet_backend)
 
-### `npm run eject`
+### Installations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone repo berikut
+   ```sh
+   git clone https://github.com/gilanglahat22/gwallet_frontend.git
+   ```
+2. Move to project directory
+   ```sh
+   cd folder-project
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the Application
+   ```sh
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[Gwallet](https://gwallet-labpro.app)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
